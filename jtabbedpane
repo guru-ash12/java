@@ -1,0 +1,26 @@
+import javax.swing.*;
+import javax.swing.tree.*;
+
+public class lab{
+	public lab(){
+		JFrame f=new JFrame();
+		JTextArea ta=new JTextArea(200,200);
+		JPanel j1=new JPanel();
+		j1.add(ta);
+		JPanel j2=new JPanel();
+		JPanel j3=new JPanel();
+		JTabbedPane tp=new JTabbedPane();
+		tp.setBounds(50,50,200,200);
+		tp.add("main",j1);
+		tp.add("visit",j2);
+		tp.add("help",j3);
+		f.add(tp);
+		f.setSize(400,400);
+		f.setLayout(null);
+		f.setVisible(true);
+		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+	public static void main(String [] args){
+		new lab();
+	}
+}
