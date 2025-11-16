@@ -1,0 +1,28 @@
+import javax.swing.*;
+import javax.swing.tree.*;
+
+public class lab{
+	public lab(){
+		JFrame f= new JFrame();
+		DefaultMutableTreeNode style=new DefaultMutableTreeNode("style");
+		DefaultMutableTreeNode color=new DefaultMutableTreeNode("color");
+		DefaultMutableTreeNode font=new DefaultMutableTreeNode("font");
+		style.add(color);
+		style.add();
+		DefaultMutableTreeNode red=new DefaultMutableTreeNode("red");
+		DefaultMutableTreeNode teal=new DefaultMutableTreeNode("teal");
+		DefaultMutableTreeNode blue=new DefaultMutableTreeNode("blue");
+		color.add(red);
+		color.add(teal);
+		color.add(blue);
+		JTree jt=new JTree(style);
+		f.add(jt);
+		f.setSize(400,400);
+		f.setVisible(true);
+		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+	}
+	public static void main(String [] args){
+		new lab();
+	}
+}
