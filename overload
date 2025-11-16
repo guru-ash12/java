@@ -1,0 +1,23 @@
+import java.util.*;
+class calculator{
+	int add(int a,int b){
+		return a+b;
+	}
+	int add(int a, int b, int c){
+		return a+b+c;
+	}
+	double add(double a,double b){
+		return a+b;
+	}
+}
+public class week3{
+	public static void main(String []args){
+		calculator c=new calculator();
+		int two=c.add(10,20);
+		int three=c.add(10,20,30);
+		double two1=c.add(10.5,10.5);
+		System.out.println(two);
+		System.out.println(three);
+		System.out.println(two1);
+	}
+}
