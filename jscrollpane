@@ -1,0 +1,48 @@
+import javax.swing.*;
+import javax.swing.tree.*;
+import java.awt.*;
+
+public class lab{
+	public lab(){
+		JFrame f=new JFrame();
+		JTextArea ta=new JTextArea(20,40);
+		ta.setText("1. Java is a high-level, object-oriented programming language designed to be platform-independent.\n"
+  + "2. It follows the principle of \"write once, run anywhere\" using the Java Virtual Machine (JVM).\n"
+  + "3. Java supports strong memory management through automatic garbage collection.\n"
+  + "4. It is widely used in web applications, mobile applications, and enterprise-level systems.\n"
+  + "5. Java provides a rich set of libraries and frameworks that simplify development.\n"
+  + "6. The syntax of Java is similar to C and C++, making it easy for programmers to learn.\n"
+  + "7. Java supports multithreading, enabling concurrent execution of multiple tasks.\n"
+  + "8. It enforces strict type checking, which reduces runtime errors.\n"
+  + "9. Java programs are compiled into bytecode, which is executed by the JVM.\n"
+  + "10. Java has a robust security model that includes runtime checks and sandboxing.\n"
+  + "11. It provides platform independence through its virtual machine architecture.\n"
+  + "12. Java's standard library includes utilities for networking, file handling, and data processing.\n"
+  + "13. The Collections Framework in Java provides powerful data structures for efficient storage.\n"
+  + "14. Java allows developers to build scalable and maintainable software systems.\n"
+  + "15. Its object-oriented nature emphasizes reusable and modular code.\n"
+  + "16. Java supports inheritance, polymorphism, encapsulation, and abstraction.\n"
+  + "17. It is commonly used for Android app development using Android Studio.\n"
+  + "18. Java also supports GUI development using Swing and JavaFX frameworks.\n"
+  + "19. Java's exception-handling mechanism improves program reliability and stability.\n"
+  + "20. JDBC in Java allows easy connectivity with relational databases.\n"
+  + "21. Java's ecosystem includes tools like Maven, Gradle, and JUnit.\n"
+  + "22. Enterprise applications often use Java EE technologies like Servlets and JSP.\n"
+  + "23. Java developers benefit from strong community support and documentation.\n"
+  + "24. Javac is the Java compiler responsible for generating bytecode.\n"
+  + "25. Overall, Java remains one of the most popular programming languages in the world.\n");
+	JScrollPane js=new JScrollPane(ta);
+	js.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+	js.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+	JPanel jp=new JPanel(new BorderLayout());
+	jp.add(js,BorderLayout.CENTER);
+	f.add(jp);
+	f.setSize(400,400);
+	f.setVisible(true);
+	f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+	}
+	public static void main(String [] args){
+		new lab();
+	}
+}
