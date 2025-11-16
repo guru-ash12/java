@@ -1,0 +1,16 @@
+import MyPack.Addition;
+import java.lang.*;
+import java.util.*;
+
+public class TestAddition {
+    public static void main(String[] args) {
+        Addition obj = new Addition();
+	Scanner sc=new Scanner(System.in);
+	System.out.print("Enter the value of a: " + "\n");
+	int a=sc.nextInt();
+	System.out.print("Enter the value of b: " + "\n");
+	int b=sc.nextInt();
+        int result = obj.add(a, b);
+        System.out.println("Sum = " + result);
+    }
+}
